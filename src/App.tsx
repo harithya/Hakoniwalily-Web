@@ -1,9 +1,12 @@
 import React from 'react'
-import HomeView from './pages/home/HomeView'
+import { RouterProvider } from "react-router-dom";
+import router from './routes/Web';
 
 const App = () => {
   return (
-    <HomeView />
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
   )
 }
 

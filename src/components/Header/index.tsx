@@ -1,19 +1,39 @@
-import React from 'react'
+import React, { FC } from 'react'
+import { Link } from 'react-router-dom'
 
-const Header = () => {
-
-    const links = ['Top', 'News', 'Profile', 'Release'];
+interface Props {
+    hideLogo?: boolean
+}
+const Header: FC<Props> = ({ hideLogo }) => {
+    const links = [
+        {
+            title: "Top",
+            url: "/"
+        },
+        {
+            title: "News",
+            url: "/news"
+        },
+        {
+            title: "Profile",
+            url: "/profile",
+        },
+        {
+            title: "Release",
+            url: "/release",
+        },
+    ];
     return (
-        <div className='container lg:px-16 lg:py-8 py-5'>
+        <header className='container lg:px-16 lg:py-8 py-5 lg:fixed absolute top-0 right-0 left-0 z-20'>
             <div className='flex lg:justify-between justify-center items-center'>
-                {/* <img src='/logo.svg' className='h-16' /> */}
+                <img src='/logo.svg' className={`h-16 lg:${hideLogo ? 'hidden' : 'block'} block`} />
                 <div>
 
                 </div>
                 <ul className='lg:flex hidden space-x-8'>
                     {links.map((item, key: number) =>
-                        <li key={key.toString()} className="uppercase text-[20px] text-gray-600">
-                            <a href='#'>{item}</a>
+                        <li key={key.toString()} className="uppercase hover:border-b border-b-primary-500 transition-all duration-500 text-[20px] text-gray-600">
+                            <Link to={item.url}>{item.title}</Link>
                         </li>)}
                 </ul>
             </div>
@@ -22,7 +42,7 @@ const Header = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
                 </svg>
             </button>
-        </div>
+        </header>
     )
 }
 

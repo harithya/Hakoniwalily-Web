@@ -24,7 +24,7 @@ const NewNews = () => {
                         <div className='border w-full h-[0.5px] border-dashed' />
                         <div className='bg-[url("https://hakoniwalily.jp/cms/wp-content/themes/hakoniwalily/assets/img/common/deco_twinkle.svg")] h-4 w-4 bg-no-repeat' />
                     </div>
-                    <h6 className='font-japanese text-justify text-primary'>{val.title}</h6>
+                    <h6 className='font-japanese text-justify text-primary-500'>{val.title}</h6>
                 </div>)}
         </div>
     )

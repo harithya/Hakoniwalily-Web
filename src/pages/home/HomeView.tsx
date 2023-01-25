@@ -1,5 +1,5 @@
 import React from 'react'
-import { NewPost } from '../../components'
+import { NewNews, NewPost } from '../../components'
 import { MainLayout } from '../../components'
 
 const HomeView = () => {
@@ -54,7 +54,18 @@ const HomeView = () => {
                 </div>
             </section>
             <section className='container'>
-                <h4 className='text-4xl'>NEWS</h4>
+                <div className='flex justify-between items-center mb-16'>
+                    <h4 className='text-4xl '>NEWS</h4>
+                    <div className='flex items-center space-x-2'>
+                        <label className='text-xl text-gray-500'>News All</label>
+                        <div className='border lg:h-16 lg:w-16 h-10 w-10 flex justify-center items-center rounded-full'>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-primary">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <NewNews />
             </section>
             <br />
             <br />

@@ -1,4 +1,6 @@
 import React from 'react'
+import IconButton from '../Button/IconButton'
+import { FiArrowUpRight } from 'react-icons/fi'
 
 const NewPost = () => {
     const data = [
@@ -44,11 +46,9 @@ const NewPost = () => {
                                     <img src='https://hakoniwalily.jp/cms/wp-content/themes/hakoniwalily/assets/img/common/icon_youtube.svg' className='h-5 w-5' />
                                     <label className='text-primary-500 opacity-90'>{val.channel} Channel</label>
                                 </div>
-                                <div className='border h-16 w-16 flex justify-center items-center rounded-full'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-primary-500">
-                                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
-                                    </svg>
-                                </div>
+                                <IconButton>
+                                    <FiArrowUpRight color='#3A2E26' size={24} />
+                                </IconButton>
                             </a>
                         </div>
                     </div>)}

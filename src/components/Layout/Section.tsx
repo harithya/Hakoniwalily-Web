@@ -1,10 +1,15 @@
-import React, { FC, PropsWithChildren } from 'react'
+import React, { FC, PropsWithChildren, useEffect } from 'react'
 import AnimationLayout from './AnimationLayout'
 
 interface Props {
-    title: string
+    title: string,
+    subtitle: string,
 }
-const Section: FC<PropsWithChildren<Props>> = ({ title, children }) => {
+const Section: FC<PropsWithChildren<Props>> = ({ title, children, subtitle }) => {
+    useEffect(() => {
+        document.title = subtitle
+    }, [])
+
     return (
         <AnimationLayout>
             <div className='container lg:mt-44 mt-36'>

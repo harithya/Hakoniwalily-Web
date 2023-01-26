@@ -4,7 +4,7 @@ import { FaYoutube, FaTwitter, FaInstagram } from 'react-icons/fa'
 
 const ProfileView = () => {
     return (
-        <Section title='Profile'>
+        <Section title='Profile' subtitle="PROFILE | ハコニワリリィ">
             <div className='lg:px-32 px-0'>
                 <img
                     className='mb-16'

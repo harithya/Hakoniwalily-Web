@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { AnimationLayout, IconButton, NewNewsContent, NewPostContent } from '../../components'
 import { FiArrowUpRight, FiArrowRight } from 'react-icons/fi'
 
 const HomeView = () => {
+    useEffect(() => {
+        document.title = "ハコニワリリィ"
+    }, [])
+
     return (
         <AnimationLayout>
             <div>

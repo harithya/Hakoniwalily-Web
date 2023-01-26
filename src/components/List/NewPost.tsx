@@ -20,11 +20,11 @@ const NewPost: FC<Props> = ({ title, channel, link }) => {
     return (
         <div ref={contentRef} className="flex items-center flex-col lg:flex-row space-x-10">
             <div className='lg:w-8/12 w-full mb-5 lg:mb-0'>
-                <div className={`lg:h-[460px] relative  ${isVisible && 'shadow-black lg:shadow-2xl'}  hover:shadow-2xl hover:shadow-black transition-all cursor-pointer duration-500`}>
+                <div className={`lg:h-[460px] relative hover:shadow-2xl ${isVisible && 'shadow-2xl  shadow-gray-800'} hover:shadow-gray-600 transition-all cursor-pointer duration-500 hover:scale-105 `}>
                     <label className='bg-primary-500 text-white text text-xl px-6 py-1 -left-5 top-8 absolute'>
                         {channel}
                     </label>
-                    <img src={getThumbnail(link)} className="lg:object-cover object-contain h-full w-full" />
+                    <img src={getThumbnail(link)} className="lg:object-cover z-0  object-contain h-full w-full" />
                 </div>
             </div>
             <div className={`lg:w-4/12 w-full  ${isVisible ? 'lg:opacity-100' : 'lg:opacity-0'} transition-all duration-500`}>

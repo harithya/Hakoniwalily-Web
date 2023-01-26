@@ -12,11 +12,18 @@ const useGetBoundingClientRect = (ref: any) => {
     const [visible, setVisible] = useState(false)
 
     const handleScroll = () => {
-        if (ref?.current?.getBoundingClientRect().top > 0) {
+        const bounc = ref?.current?.getBoundingClientRect().top;
+        if (bounc > 0 && bounc < 500) {
             setVisible(true)
         } else {
             setVisible(false)
         }
+
+        // if (ref?.current?.getBoundingClientRect().top > 50 && ref?.current?.getBoundingClientRect().top < 100) {
+        //     setVisible(true)
+        // } else {
+        //     setVisible(false)
+        // }
     }
 
     return visible

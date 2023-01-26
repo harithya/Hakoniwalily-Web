@@ -7,6 +7,7 @@ interface Props {
     hideLogo?: boolean
 }
 const MainLayout: FC<Props> = ({ hideLogo }) => {
+
     return (
         <div>
             <Header hideLogo={hideLogo} />

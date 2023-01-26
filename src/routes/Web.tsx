@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { MainLayout } from "../components";
-import { HomeView, NewsView, ProfileView, ReleaseView } from "../pages";
+import { HomeView, NewsDetailView, NewsView, ProfileView, ReleaseView } from "../pages";
 
 const router = createBrowserRouter([
     {
@@ -15,6 +15,7 @@ const router = createBrowserRouter([
         element: <MainLayout />,
         children: [
             { path: "/news", element: <NewsView />, },
+            { path: "/news/:id", element: <NewsDetailView /> },
             { path: "/profile", element: <ProfileView />, },
             { path: "/release", element: <ReleaseView />, },
 

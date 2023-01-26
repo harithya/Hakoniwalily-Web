@@ -5,6 +5,7 @@ import IconButton from "./Button/IconButton";
 import Section from "./Layout/Section";
 import AnimationLayout from "./Layout/AnimationLayout";
 import News from "./List/News";
+import Divider from "./Divider";
 
 export {
     MainLayout,
@@ -13,5 +14,6 @@ export {
     IconButton,
     Section,
     AnimationLayout,
-    News
+    News,
+    Divider
 }

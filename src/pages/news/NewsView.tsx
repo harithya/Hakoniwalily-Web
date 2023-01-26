@@ -1,12 +1,12 @@
 import React from 'react'
-import dummy from '../../assets/dummy'
+import { newsDummy } from '../../assets/dummy'
 import { News, Section } from '../../components'
 
 const NewsView = () => {
     return (
         <Section title="News">
             <div>
-                {dummy.map((item, index) => <News {...item} key={index.toString()} />)}
+                {newsDummy.map((item, index) => <News {...item} key={index.toString()} />)}
             </div>
         </Section>
     )

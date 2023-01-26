@@ -24,7 +24,7 @@ const Header: FC<Props> = ({ hideLogo }) => {
         },
     ];
     return (
-        <header className='container lg:px-16 lg:h-20 h-auto py-2 lg:py-0 bg-white/50 backdrop-blur-sm flex flex-row   lg:fixed absolute top-0 right-0 left-0 z-20'>
+        <header className='container lg:px-16 lg:h-28 h-auto py-2 lg:py-0  flex flex-row   lg:fixed absolute top-0 right-0 left-0 z-20'>
             <div className='flex lg:justify-between justify-center w-full items-center'>
                 <Link to={'/'}>
                     <img src='/logo.svg' className={`h-16 lg:${hideLogo ? 'hidden' : 'block'} block`} />

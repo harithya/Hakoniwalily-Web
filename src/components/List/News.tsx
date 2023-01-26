@@ -29,7 +29,7 @@ const News: FC<Props> = ({ title, date, category }) => {
                 <label className='font-japanese flex-1 text-primary-500 text-lg'>{title}</label>
                 <div className=' justify-between lg:flex hidden space-x-1'>
                     {category.map((val, key) =>
-                        <label key={key.toString()} className='flex-1  text-primary-500/70 text-lg'>{`{${val}}`}</label>
+                        <label key={key.toString()} className='flex-1  text-primary-500/70 text-md uppercase'>{`{${val}}`}</label>
                     )}
                 </div>
             </div>

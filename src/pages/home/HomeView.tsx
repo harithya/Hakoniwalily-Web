@@ -34,7 +34,7 @@ const HomeView = () => {
                         className='absolute lg:block right-0 lg:-bottom-28 lg:h-44 h-36 hidden '
                     />
                     <div className='lg:w-3/12 order-2 lg:order-first w-full'>
-                        <label className='lg:text-xl text-left text-lg  text-gray-600'>同人MINI ALBUM</label>
+                        <label className='lg:text-xl text-left text-lg  text-primary-500/50'>同人MINI ALBUM</label>
                         <h3 className='lg:text-4xl text-2xl tracking-widest  font-medium mt-5 text-primary-500'>ずっといっしょ</h3>
                     </div>
                     <div className='lg:w-6/12 justify-center items-center flex order-first lg:order-2'>

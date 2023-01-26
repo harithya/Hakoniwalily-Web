@@ -21,7 +21,7 @@ const Section: FC<PropsWithChildren<Props>> = ({ title, children }) => {
                         <div className='text-primary-400 text-sm   text-center'>Hanon & Kotoha</div>
                     </div>
                 </div>
-                <div className='mt-20'>
+                <div className='mt-16'>
                     {children}
                 </div>
             </div>

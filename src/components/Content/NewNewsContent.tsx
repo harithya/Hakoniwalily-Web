@@ -14,7 +14,7 @@ const data = [
         date: "2022.11.26"
     }
 ]
-const NewNews = () => {
+const NewNewsContent = () => {
     return (
         <div className='flex lg:space-x-16 space-y-10 lg:space-y-0 lg:flex-row flex-col'>
             {data.map((val, key) =>
@@ -30,4 +30,4 @@ const NewNews = () => {
     )
 }
 
-export default NewNews
+export default NewNewsContent

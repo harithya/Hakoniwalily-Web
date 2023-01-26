@@ -1,5 +1,5 @@
-import React from 'react'
-import { IconButton, NewNews, NewPost } from '../../components'
+import React, { useEffect } from 'react'
+import { IconButton, NewNewsContent, NewPostContent } from '../../components'
 import { FiArrowUpRight, FiArrowRight } from 'react-icons/fi'
 
 const HomeView = () => {
@@ -13,16 +13,16 @@ const HomeView = () => {
                     <div className='lg:h-[800px] h-[500px]'>
                         <img
                             src='https://hakoniwalily.jp/cms/wp-content/uploads/2022/08/Hakoniwa_KyorikanJK0303.jpg'
-                            className='h-full w-full object-top object-cover  '
+                            className='h-full w-full object-top object-cover'
                         />
                     </div>
                 </div>
             </section>
-            <section className='mb-60'>
-                <NewPost />
+            <section className='lg:mb-60 mb-40'>
+                <NewPostContent />
             </section>
             <section className='container flex items-center flex-col space-y-8 lg:space-y-0 lg:flex-row relative lg:mb-60 mb-36'>
-                <div className='absolute -z-10 blur-sm opacity-20 right-0 kotoha'>
+                <div className='absolute -z-10 blur-sm opacity-20 right-0'>
                     <img
                         src='https://hakoniwalily.jp/cms/wp-content/uploads/2021/07/img_2nd-album.jpg'
                         className='w-[700px]'
@@ -30,7 +30,7 @@ const HomeView = () => {
                 </div>
                 <img
                     src='https://hakoniwalily.jp/cms/wp-content/themes/hakoniwalily/assets/img/top/sd_kotoha.png'
-                    className='absolute lg:block right-0 lg:-bottom-28 lg:h-44 h-36 hidden'
+                    className='absolute lg:block right-0 lg:-bottom-28 lg:h-44 h-36 hidden '
                 />
                 <div className='lg:w-3/12 order-2 lg:order-first w-full'>
                     <label className='lg:text-xl text-left text-lg  text-gray-600'>同人MINI ALBUM</label>
@@ -55,7 +55,7 @@ const HomeView = () => {
                         <FiArrowRight color='#3A2E26' size={24} />
                     </IconButton>
                 </div>
-                <NewNews />
+                <NewNewsContent />
             </section>
         </div>
     )

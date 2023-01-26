@@ -1,11 +1,11 @@
 import MainLayout from "./Layout/MainLayout";
-import NewPost from "./Content/NewPost";
-import NewNews from "./Content/NewNews";
+import NewPostContent from "./Content/NewPostContent";
+import NewNewsContent from "./Content/NewNewsContent";
 import IconButton from "./Button/IconButton";
 
 export {
     MainLayout,
-    NewPost,
-    NewNews,
+    NewPostContent,
+    NewNewsContent,
     IconButton
 }

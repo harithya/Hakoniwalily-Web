@@ -1,4 +1,4 @@
-# Hakoniwalily Tailwind Web
+# Hakoniwalily Website
 
 ![Simple template preview](https://raw.githubusercontent.com/harithya/Hakoniwalily-Web/main/public/cover.png)
 
@@ -11,7 +11,7 @@ Check the live demo here 👉️ [hakoniwalily.vercel.app](https://hakoniwalily.
 
 ## Design files
 
-Hakoniwalily website 👉 [hakoniwalily.jp](https://hakoniwalily.jp/)
+Original Hakoniwalily website 👉 [hakoniwalily.jp](https://hakoniwalily.jp/)
 
 ## Usage
 

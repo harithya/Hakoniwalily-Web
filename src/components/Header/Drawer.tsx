@@ -17,13 +17,13 @@ const Drawer: FC<Props> = ({ isOpen, onClose }) => {
                 </div>
 
                 <img src='/logo.svg' className={`h-24 block mx-auto mt-10`} />
-                <div className='flex w-full mt-16'>
+                <div className='flex w-full mt-16 p-10'>
                     <ul className='grid grid-cols-2 gap-5 w-full'>
                         {links.map((val, key) =>
                             <MenuItem
                                 key={key.toString()}
                                 {...val}
-                                className="text-2xl hover:border-b-0"
+                                className="text-2xl hover:border-b-0 font-medium"
                             />)}
                     </ul>
                 </div>

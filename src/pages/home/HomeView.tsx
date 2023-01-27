@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react'
 import { AnimationLayout, IconButton, NewNewsContent, NewPostContent } from '../../components'
 import { FiArrowUpRight, FiArrowRight } from 'react-icons/fi'
+import { useNavigate } from 'react-router-dom'
 
 const HomeView = () => {
     useEffect(() => {
         document.title = "ハコニワリリィ"
     }, [])
+
+    const navigation = useNavigate();
 
     return (
         <AnimationLayout>
@@ -48,7 +51,7 @@ const HomeView = () => {
                         />
                     </div>
                     <div className='lg:w-3/12 flex lg:justify-end order-last w-full'>
-                        <IconButton title='Release All'>
+                        <IconButton title='Release All' onClick={() => navigation("/release")}>
                             <FiArrowUpRight color='#3A2E26' size={24} />
                         </IconButton>
                     </div>
@@ -56,7 +59,7 @@ const HomeView = () => {
                 <section className='container'>
                     <div className='flex justify-between items-center mb-16'>
                         <h4 className='text-4xl '>NEWS</h4>
-                        <IconButton title='Release All'>
+                        <IconButton title='Release All' onClick={() => navigation("/news")}>
                             <FiArrowRight color='#3A2E26' size={24} />
                         </IconButton>
                     </div>

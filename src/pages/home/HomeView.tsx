@@ -21,7 +21,7 @@ const HomeView = () => {
                         <div className='lg:h-[800px] h-[500px]'>
                             <img
                                 src='https://hakoniwalily.jp/cms/wp-content/uploads/2022/08/Hakoniwa_KyorikanJK0303.jpg'
-                                className='h-full w-full object-top object-cover'
+                                className='h-full w-full object-top object-cover '
                             />
                         </div>
                     </div>

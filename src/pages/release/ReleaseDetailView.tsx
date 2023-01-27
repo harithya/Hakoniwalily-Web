@@ -36,7 +36,11 @@ const ReleaseDetailView = () => {
                                 作詞作曲：コミヤマリオ</li>
                         </ol>
 
-                        <div className='mt-5 grid grid-cols-2 gap-5'>
+                        <div className='mt-5 grid grid-cols-2 gap-5 relative'>
+                            <img
+                                src='https://hakoniwalily.jp/cms/wp-content/themes/hakoniwalily/assets/img/release/sd_hanon.png'
+                                className='absolute lg:block right-0  bottom-12 lg:h-44 h-36 hidden'
+                            />
                             <button className='w-full border py-2 border-primary-500 flex justify-between items-center px-5'>
                                 <label>配信サイト</label>
                                 <FiArrowUpRight size={18} className="text-primary-500" />
